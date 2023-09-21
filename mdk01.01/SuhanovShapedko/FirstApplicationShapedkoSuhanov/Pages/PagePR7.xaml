@@ -1,0 +1,66 @@
+﻿<Page x:Class="FirstApplicationShapedkoSuhanov.Pages.PagePR7"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FirstApplicationShapedkoSuhanov.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PagePR7">
+
+    <Grid Background="Bisque">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0"
+                    Orientation="Vertical"
+                    HorizontalAlignment="Center">
+            <TextBlock Text="Выполнил Шапедько В. А."/>
+            <TextBlock Text="Вариант-24"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Center">
+            <ListBox x:Name="lstMas"
+                     Height="220"
+                     Width="500"
+                     Margin="10"
+                     Background="Azure"/>
+        </StackPanel>
+        <StackPanel Grid.Row="2"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Center">
+            <Button x:Name="btnMas"
+                    Margin="10"
+                    Width="150"
+                    Height="21"
+                    Content="Заполнение массива"
+                    Click="btnMas_Click"/>
+
+        </StackPanel>
+        <StackPanel Grid.Row="3"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Center">
+            <ListBox x:Name="lstMasResult"
+                     Height="220"
+                     Width="500"
+                     Margin="10"
+                     Background="Azure"/>
+        </StackPanel>
+        <StackPanel Grid.Row="4"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Center">
+            <Button x:Name="btnResultMas"
+                    Height="25"
+                    Width="150"
+                    Margin="10"
+                    Content="Результат"
+                    Click="btnResultMas_Click"/>
+
+        </StackPanel>
+    </Grid>
+</Page>
